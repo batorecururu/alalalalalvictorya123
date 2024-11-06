@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Generos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Autores</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Prime video</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">netflix</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">HBO</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Recomendaçoes" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Whatch List" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Letterbox</h2>
+    <p class="banner__texto">Encontre no app novos filmes</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/Apachekafka.svg"
+            alt="A substancia 2024"></div>
+        <div class="swiper-slide"><img src="img/Liderança.svg"
+            alt="Longlegs 2024"></div>
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="talk to me 2024">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Guia Front-end.svg" alt="Marcas da maldiçao" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Portugol.svg" alt="A freira" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Acessibilidade.svg" alt="A freira 2" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Generos diferentes</h2>
+          <p class="descrição__texto">
+            Como filmes de comedia romantica e açao 
+          </p>
+        </div>
+        <img src="img/Angular.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="resgate 1 " />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="resgate 2" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">encontrados na netflix !</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg"
+            alt="Livro sobre orgulho e preconceito"></div>
+        <div class="swiper-slide"><img src="img/Liderança.svg" alt="filme sobre a obra ganha filme na netflix">
+        </div>
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre é assim que acaba">
+        </div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="foi lançado nos cinemas"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre como eu era antes de voce"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre a culpa é das estrelas"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="boas avaliaçoes">
+          <h3 class="descrição__titulo">Autora do Mês</h3>
+          <h2 class="descrição__titulo-livro"></h2>
+          <p class="descrição__texto">COLLEN HOOVER
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/Escritora.svg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Plataformas de streaming</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros que ganharam adaptacoes</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">autora comentada</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">App avaliativo-Letterbox</a>
+      </li>
+    
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de novos livros, filmes e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo STREAMING</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
